@@ -32,6 +32,14 @@ public abstract class SocialBase {
 		mStatusListener = listener;
 	}
 
+	/**
+	 * Deprecated! Please use Status.Builder instead
+	 * @param text
+	 * @param date
+	 * @param index
+	 * @return
+	 */
+	@Deprecated
 	public Status acquireStatus(String text, Date date, long index){
 		Status s = new Status();
 		s.setText(text);
@@ -43,7 +51,7 @@ public abstract class SocialBase {
 	
 	public abstract void startUpdating();
 	public abstract void stopUpdating();
-	public abstract Status getStatus(long index);
+	public abstract Status getStatus(long id);
 	public abstract void startAuth(Context context);
 	public abstract void postStatus(Status s);
 	
