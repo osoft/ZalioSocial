@@ -50,6 +50,13 @@ public class GeneratorThread extends Thread {
 				e.printStackTrace();
 			}
 		}
+		
+		if(mListener != null){
+			Status.Builder b = new Builder();
+			b.setId(-1L);
+			b.setText("FINISH");
+			mListener.onNewStatus(b.getStatus());
+		}
 //		
 //		for(StatusesInfo i:mWeiboObj.statuses){
 //			MyLog.i(TAG, "Generating Status!");

@@ -161,6 +161,10 @@ public class MainActivity extends Activity {
 				//Status s = t.getStatus(msg.arg1);
 				Status s = (Status) msg.obj;
 				//MyLog.i(TAG, "Adding status to list");
+				if(s.getIndex() == -1 && s.getText().equals("FINISH")){
+					statusAdapter.notifyDataSetChanged();
+					break;
+				}
 				mStatusList.add(0,s);
 				int size = mStatusList.size();
 				//for(int i = 0; i < size; i++){
