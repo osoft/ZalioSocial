@@ -90,66 +90,120 @@ public class Status implements Serializable{
 	public Status(){
 		
 	}
+	
+	/**
+	 * Get the text content
+	 * @return A String containing the text content
+	 */
 	public String getText() {
 		return text;
 	}
 	protected void setText(String text) {
 		this.text = text;
 	}
+	
+	/**
+	 * 
+	 * @return
+	 */
 	public Status getOriginalStatus(){
 		return oriStatus;
 	}
 	protected void setOriginalStatus(Status s){
 		this.oriStatus = s;
 	}
+	
+	/**
+	 * Get the date/time information of the status
+	 */
 	public Date getDate() {
 		return date;
 	}
 	protected void setDate(Date date) {
 		this.date = date;
 	}
+	
+	/**
+	 * Get the index/id of the status
+	 * @return
+	 */
 	public long getIndex() {
 		return index;
 	}
 	protected void setIndex(long index) {
 		this.index = index;
 	}
+	
+	/**
+	 * Get the screen name of the user who sent the status
+	 * @return
+	 */
 	public String getUserScreenName() {
 		return userScreenName;
 	}
 	protected void setUserScreenName(String user_screen_name) {
 		this.userScreenName = user_screen_name;
 	}
+	
+	/**
+	 * Get the url of the full image
+	 * @return
+	 */
 	public String getImageUrl() {
 		return imageUrl;
 	}
 	protected void setImageUrl(String imageUrl) {
 		this.imageUrl = imageUrl;
 	}
+	
+	/**
+	 * Get the url of the video if there is one
+	 * @return
+	 */
 	public String getVideoUrl() {
 		return videoUrl;
 	}
 	protected void setVideoUrl(String videoUrl) {
 		this.videoUrl = videoUrl;
 	}
+	
+	/**
+	 * Get the id/name of the social network this status belongs to
+	 * @return
+	 */
 	public String getSocialName(){
 		return socialName;
 	}
 	protected void setSocialName(String socialName) {
 		this.socialName = socialName;
 	}
+	
+	/**
+	 * Get the url of the thumb image from the status
+	 * @return
+	 */
 	public String getThumbUrl() {
 		return thumbUrl;
 	}
 	protected void setThumbUrl(String thumbUrl) {
 		this.thumbUrl = thumbUrl;
 	}
+	
+	/**
+	 * Get the url of the user current logged in to this social network
+	 * @return
+	 */
 	public String getUserAvatarUrl() {
 		return userAvatarUrl;
 	}
 	protected void setUserAvatarUrl(String userAvatarUrl) {
 		this.userAvatarUrl = userAvatarUrl;
 	}
+	
+	/**
+	 * Get the hyper-links in the text content of the status
+	 * @return
+	 */
 	public ArrayList<String> getLinks() {
 		return links;
 	}
