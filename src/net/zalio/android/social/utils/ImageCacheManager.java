@@ -14,13 +14,13 @@ import java.util.List;
 
 import android.graphics.drawable.Drawable;
 
-public class ImageCacheManager {
+class ImageCacheManager {
 	// Singleton
 	private static ImageCacheManager INSTANCE = new ImageCacheManager();
 	private ImageCacheManager(){
 		
 	}
-	public static ImageCacheManager getInstance(){
+	protected static ImageCacheManager getInstance(){
 		return INSTANCE;
 	}
 	
